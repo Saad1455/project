@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+ 
+  .container{
+    width: 75%;
+    margin: 50px auto;
+    border: 1px solid black;
+    display: grid;
+    color: blanchedalmond;
+    grid-template-rows: 60px 100px 200px 60px;
+    grid-template-columns: repeat(3,1fr) 150px;
+    grid-gap: 20px;
+  
+  }
+
+  .box1{
+    background-color: brown;
+    grid-column: 1/-1;
+   
+  }
+
+  .box2{
+      background-color: chocolate;
+      background-image: url(/book.jpg);
+     
+     
+  }
+  
+  .box3{
+      background-color: crimson;
+    
+     
+  }
+
+  .box4{
+      background-color: darkcyan;
+      
+    
+  }
+
+  .box5{
+      background-color: darkgreen;
+      grid-row: 2/4;
+      grid-column: 4/5;
+    
+  }
+  
+  .box6{
+      background-color: darkred;
+      grid-column: 1/4;
+      background-image: url(/book.jpg);
+    
+     
+     
+  }
+  .box7{
+     background-color: darkred;
+      grid-column: 1/-1;
+    
+  }
+
+</style>
+<body>
+     <div class="container">
+      <div class="box1">header</div>
+      <div class="box2">box1</div>
+      <div class="box3">box2</div>
+      <div class="box4">box3</div>
+      <div class="box5">SIDEBAR </div>
+      <div class="box6">box6</div>
+      <div class="box7">footer</div>
+     </div>
+</body>
+</html>
